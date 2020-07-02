@@ -18,6 +18,7 @@ import "encoding/json"
 
 // AutoEvent supports auto-generated events sourced from a device service
 type AutoEvent struct {
+	StartTime string `json:"startTime,omitempty"`
 	// Frequency indicates how often the specific resource needs to be polled.
 	// It represents as a duration string.
 	// The format of this field is to be an unsigned integer followed by a unit which may be "ms", "s", "m" or "h"
